@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collage</title>
+</head>
+<style>
+	.wrap{width: 800px; height: 3119px; margin: auto; background-image: url("background.png");}
+
+	section{height: 500px; margin-bottom: 30px; position: relative;
+		perspective: 500px;}
+
+	.people{position: absolute; z-index: 2;}
+	.blur{width: 550px; position: absolute;
+		animation: ro infinite 10s alternate cubic-bezier(.44,.26,.66,1.01); display: block; }
+	@keyframes ro{
+		from{}
+		to{left: 10px; }
+		}
+	}
+
+	.up{position: fixed;  z-index: 1;}
+	.down{position: fixed; z-index: 1;}
+	.one{width:800px; position: absolute;}
+	.check{width: 100px; position: absolute; z-index: 2}
+	.two{width: 600px; position: absolute;}
+	.mini{width: 80px; position: absolute; z-index: 1;}
+	.threebig{width: 200px; position: absolute; z-index: 2;}
+	.three{width: 800px; position: absolute;} 
+	.seven{width: 30px; position: absolute;}
+	.fam{width: 300px; position: absolute; z-index: 2; animation: lim infinite 10s alternate cubic-bezier(.44,.26,.80,1.01); display: block; }
+	@keyframes lim{
+		from{}
+		to{left: 20px; }
+		}
+	}
+	.six{width: 50px; position: absolute;}
+	.eight{width: 145px; position: absolute;}
+	.nine{width: 60px; position: absolute; z-index: 2}
+	.eleven{width: 50px; position: absolute;}
+
+
+
+</style>
+<body>
+
+	<div class="wrap" >
+		<section class="up">
+			<img src="upshu.png" style="width:800px; left:0px; top:0px;">
+	
+		</section>
+		<section class="people">
+			<img src="blur.png" class="blur" style="left: -100px; top: 1100px">
+
+	
+		</section>
+
+		<section class="one">
+			<img src="1.jpg" class="one" style="left: 0px; top: 300px;">
+			<img src="check.png" class="check" style="left: 500px; top: 480px;">
+
+			<img src="2.jpg" class="two" style=" left: 200px; top: 800px; ">
+			<img src="7.png" class="seven" style=" left: 200px; top: 500px; ">
+			<img src="fam.png" class="fam" style=" left: 570px; top: 520px; ">
+			<img src="6.png" class="six" style=" left: 280px; top: 550px; ">
+			<img src="8.png" class="eight" style=" left: 360px; top: 1400px; ">
+			<img src="9.png" class="nine" style=" left:700px; top: 1350px; ">
+			<img src="11.png" class="eleven" style=" left: 650px; top: 1330px; ">
+
+
+
+			<img src="three-big.png" class="threebig" style=" left: 20px; top: 2300px;">
+			<img src="3-mini.png" class="mini" style="left: 570px; top: 2300px;">
+			<img src="3.jpg" class="three" style="right: 0px; top: 2000px;">
+
+			<img src="down.png" class="down" style="width:800px; left: 0px; top: 2550px;">
+		</section>
+		
+	</div>
+</body>
+</html>
